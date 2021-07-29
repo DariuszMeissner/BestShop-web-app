@@ -1,3 +1,297 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 0;
+}
+.row [class*=col-] {
+  min-height: 1px;
+  padding: 0 1.175rem;
+  margin: 1rem 0;
+}
+.row .col-xs-1 {
+  width: 8.3333333333%;
+}
+.row .col-xs-2 {
+  width: 16.6666666667%;
+}
+.row .col-xs-3 {
+  width: 25%;
+}
+.row .col-xs-4 {
+  width: 33.3333333333%;
+}
+.row .col-xs-5 {
+  width: 41.6666666667%;
+}
+.row .col-xs-6 {
+  width: 50%;
+}
+.row .col-xs-7 {
+  width: 58.3333333333%;
+}
+.row .col-xs-8 {
+  width: 66.6666666667%;
+}
+.row .col-xs-9 {
+  width: 75%;
+}
+.row .col-xs-10 {
+  width: 83.3333333333%;
+}
+.row .col-xs-11 {
+  width: 91.6666666667%;
+}
+.row .col-xs-12 {
+  width: 100%;
+}
+@media (min-width: 736px) {
+  .row .col-sm-1 {
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-2 {
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-3 {
+    width: 25%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-4 {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-5 {
+    width: 41.6666666667%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-6 {
+    width: 50%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-7 {
+    width: 58.3333333333%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-8 {
+    width: 66.6666666667%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-9 {
+    width: 75%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-10 {
+    width: 83.3333333333%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-11 {
+    width: 91.6666666667%;
+  }
+}
+@media (min-width: 736px) {
+  .row .col-sm-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-1 {
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-2 {
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-3 {
+    width: 25%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-4 {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-5 {
+    width: 41.6666666667%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-6 {
+    width: 50%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-7 {
+    width: 58.3333333333%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-8 {
+    width: 66.6666666667%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-9 {
+    width: 75%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-10 {
+    width: 83.3333333333%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-11 {
+    width: 91.6666666667%;
+  }
+}
+@media (min-width: 1025px) {
+  .row .col-md-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-1 {
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-2 {
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-3 {
+    width: 25%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-4 {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-5 {
+    width: 41.6666666667%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-6 {
+    width: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-7 {
+    width: 58.3333333333%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-8 {
+    width: 66.6666666667%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-9 {
+    width: 75%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-10 {
+    width: 83.3333333333%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-11 {
+    width: 91.6666666667%;
+  }
+}
+@media (min-width: 1280px) {
+  .row .col-lg-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-1 {
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-2 {
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-3 {
+    width: 25%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-4 {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-5 {
+    width: 41.6666666667%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-6 {
+    width: 50%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-7 {
+    width: 58.3333333333%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-8 {
+    width: 66.6666666667%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-9 {
+    width: 75%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-10 {
+    width: 83.3333333333%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-11 {
+    width: 91.6666666667%;
+  }
+}
+@media (min-width: 1680px) {
+  .row .col-xl-12 {
+    width: 100%;
+  }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -439,5 +733,70 @@ textarea {
   /* IE9 Compat Modes */
   src: local(""), url("../../fonts/raleway-v22-latin-ext_latin-800.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-v22-latin-ext_latin-800.woff2") format("woff2"), url("../../fonts/raleway-v22-latin-ext_latin-800.woff") format("woff"), url("../../fonts/raleway-v22-latin-ext_latin-800.ttf") format("truetype"), url("../../fonts/raleway-v22-latin-ext_latin-800.svg#Raleway") format("svg");
   /* Legacy iOS */
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=email], input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 3.5rem;
+}
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 3.0625rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+@media (min-width: 1025px) {
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.header__logo {
+  font-size: 2.5rem;
+  color: #08a6e4;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer__logo {
+  font-size: 1.875rem;
+  color: #08a6e4;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
