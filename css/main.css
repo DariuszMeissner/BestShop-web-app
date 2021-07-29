@@ -799,4 +799,115 @@ h3 {
   font-weight: 300;
   font-family: "Raleway", sans-serif;
 }
+
+.header {
+  position: fixed;
+  width: 100%;
+  box-shadow: inset 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  z-index: 3;
+}
+.header--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 10vh;
+  padding: 0 1.5rem;
+  background-color: #fff;
+  box-shadow: inset 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1025px) {
+  .header--container {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.header__nav {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  transform: translateY(-200%);
+  background-color: #fff;
+  padding: 1.5rem;
+  transition: 0.1s;
+  z-index: -1;
+  box-shadow: inset 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .header__nav {
+    display: flex;
+    position: static;
+    transform: none;
+    box-shadow: none;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+.header .nav__element {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1025px) {
+  .header .nav__element {
+    border-bottom: 4px solid transparent;
+    height: 10vh;
+    padding: 0.5rem 0;
+  }
+}
+@media (min-width: 1025px) {
+  .header .nav__element:hover {
+    border-bottom: 4px solid #08a6e4;
+  }
+}
+.header .nav__link {
+  color: #a5a5a5;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  letter-spacing: 2px;
+  padding: 0.5rem 1.5rem;
+}
+@media (min-width: 1025px) {
+  .header .nav__link {
+    padding: 2rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+.header .nav__link:active {
+  color: #000;
+}
+.header .nav__link:hover {
+  color: #000;
+}
+
+.menu__btn {
+  display: none;
+}
+.menu__btn:checked ~ .header__nav {
+  transform: none;
+}
+.menu__btn:checked ~ .menu__toogle .fa-bars {
+  display: none;
+}
+.menu__btn:checked ~ .menu__toogle .fa-times {
+  display: inline-block;
+}
+.menu__toogle {
+  color: #08a6e4;
+  cursor: pointer;
+}
+@media (min-width: 1025px) {
+  .menu__toogle {
+    display: none;
+  }
+}
+.menu .fas {
+  font-size: 1.5rem;
+}
+.menu .fa-times {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */

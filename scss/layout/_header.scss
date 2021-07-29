@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  width: 100%;
+  box-shadow: $box-shadow-header;
+  background-color: $backgraund;
+  z-index: 3;
+
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: $header-height;
+    padding: 0 $space-container;
+    background-color: $backgraund;
+    box-shadow: $box-shadow-header;
+
+    @include laptop {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    transform: translateY(-200%);
+    background-color: $surface;
+    padding: $space-sm;
+    transition: 0.1s;
+    z-index: -1;
+    box-shadow: $box-shadow-header;
+    width: 100%;
+
+    @include laptop {
+      display: flex;
+      position: static;
+      transform: none;
+      box-shadow: none;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+  .nav {
+    &__element {
+      display: flex;
+      align-items: center;
+
+      @include laptop {
+        border-bottom: 4px solid transparent;
+        height: $header-height;
+        padding: $space-xs 0;
+      }
+
+      &:hover {
+        @include laptop {
+          border-bottom: 4px solid $primary;
+        }
+      }
+    }
+    &__link {
+      color: $on-surface-secondary;
+      font-weight: $bold;
+      text-transform: uppercase;
+      font-size: $font-size-nav-elem-mobile;
+      letter-spacing: 2px;
+      padding: $space-xs $space-sm;
+
+      @include laptop {
+        padding: $space-md $space-sm;
+        font-size: $font-size-nav-elem;
+      }
+      &:active {
+        color: $on-surface;
+      }
+      &:hover {
+        color: $on-surface;
+      }
+    }
+  }
+}
+
+.menu {
+  &__btn {
+    display: none;
+
+    &:checked {
+      ~ .header__nav {
+        transform: none;
+      }
+      ~ .menu__toogle .fa-bars {
+        display: none;
+      }
+      ~ .menu__toogle .fa-times {
+        display: inline-block;
+      }
+    }
+  }
+  &__toogle {
+    color: $primary;
+    cursor: pointer;
+    @include laptop {
+      display: none;
+    }
+  }
+  .fas {
+    font-size: 1.5rem;
+  }
+  .fa-times {
+    display: none;
+  }
+}
