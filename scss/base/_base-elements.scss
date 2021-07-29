@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+input[type="text"], input[type="email"], input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+html,
+body {
+  font-size: $text-base-size;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: $font-size-h1-mobile;
+  font-family: $font-heading;
+  font-weight: $regular;
+  line-height: 3.5rem;
+  @include laptop {
+    font-size: $font-size-h1;
+  }
+}
+h2 {
+  font-size: $font-size-h2-mobile;
+  font-family: $font-heading;
+  font-weight: $regular;
+  line-height: 2.7rem;
+  @include laptop {
+    font-size: $font-size-h2;
+  }
+}
+h3 {
+  font-size: $font-size-h3;
+  font-family: $font-heading;
+  font-weight: $regular;
+}
+
+.header {
+  &__logo {
+    font-size: 2.5rem;
+    color: $primary;
+    font-weight: $thin;
+    font-family: $font-heading;
+  }
+}
+.footer {
+  &__logo {
+    font-size: 1.875rem;
+    color: $primary;
+    font-weight: $thin;
+    font-family: $font-heading;
+  }
+}
+
