@@ -910,4 +910,42 @@ h3 {
 .menu .fa-times {
   display: none;
 }
+
+.opening {
+  padding-top: 10vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  background-color: #fff;
+}
+.opening--container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1025px) {
+  .opening--container {
+    height: 60vh;
+    padding-bottom: 0;
+    justify-content: flex-end;
+  }
+}
+.opening__subtitle, .opening__title {
+  text-align: center;
+}
+.opening__img {
+  background-image: url("../../assets/Background.png");
+  height: 40vh;
+  background-size: cover;
+  background-position: top center;
+}
+@media (min-width: 1025px) {
+  .opening__img {
+    height: 80vh;
+  }
+}
 /*# sourceMappingURL=main.css.map */

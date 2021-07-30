@@ -1,0 +1,34 @@
+.opening {
+  padding-top: $header-height;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  background-color: $backgraund;
+
+  &--container {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include laptop {
+      height: 60vh;
+      padding-bottom: 0;
+      justify-content: flex-end;
+    }
+  }
+  &__subtitle, &__title {
+    text-align: center;
+  }
+  &__img {
+    background-image: url("../../assets/Background.png");
+    height: 40vh;
+    background-size: cover;
+    background-position: top center;
+    @include laptop {
+      height: 80vh;
+    }
+  }
+}
