@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   box-shadow: $box-shadow-header;
-  background-color: $backgraund;
+  background-color: $background;
   z-index: 3;
 
   &--container {
@@ -13,7 +13,7 @@
     margin: 0 auto;
     height: $header-height;
     padding: 0 $space-container;
-    background-color: $backgraund;
+    background-color: $background;
     box-shadow: $box-shadow-header;
 
     @include laptop {
