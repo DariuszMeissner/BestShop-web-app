@@ -6,3 +6,8 @@ I will be building web application based on HTML5, CSS3, SASS, RWD and BEM metod
 ## What next?
 After builded static page, I will upgrade the page based on JS ES6 and React.js.
 
+## Log
+31.07.2021 - End of creating HTML structure and basic styling
+
+
+
