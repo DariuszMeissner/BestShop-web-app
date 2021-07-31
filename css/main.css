@@ -1343,4 +1343,108 @@ h3 {
   width: 11px;
   margin-right: 5px;
 }
+
+.contact {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -50px 36px -28px inset;
+}
+.contact__info {
+  margin-bottom: 3rem;
+  background-color: #fff;
+}
+.contact__title {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
+}
+@media (min-width: 1025px) {
+  .contact__title {
+    font-size: 3.0625rem;
+  }
+}
+.contact__description {
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+.contact__item {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.contact__item--email::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../assets/Mail Icon.svg");
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 2rem;
+  margin-right: 5px;
+}
+.contact__item--phone::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../assets/Phone Icon.svg");
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 2rem;
+  margin-right: 5px;
+}
+.contact__email {
+  color: #a5a5a5;
+}
+.contact__phone {
+  color: #a5a5a5;
+}
+.contact__label {
+  display: block;
+  color: #08a6e4;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.875rem;
+}
+.contact__input {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 3rem;
+}
+.contact__input:focus {
+  border-bottom: 3px solid #08a6e4;
+}
+
+.contact__hidedInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.contact__hidedInput:checked + .contact__checkbox {
+  background-image: url("../../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact__hidedInput:focus + .contact__checkbox {
+  box-shadow: 0 0 5px 5px #07ace629;
+}
+
+.contact__label--policy {
+  cursor: pointer;
+  display: flex;
+}
+.contact__checkbox {
+  height: 25px;
+  flex-shrink: 0;
+  flex-basis: 25px;
+  border: 1px solid #a5a5a5;
+  cursor: pointer;
+  margin-right: 15px;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=main.css.map */
