@@ -1,0 +1,26 @@
+@use "sass:color";
+
+.footer {
+  background-color: $backgraund-variant;
+  &__company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+  }
+  &__social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  &__copyright {
+    font-size: $font-size-xxs;
+    color: $on-surface-secondary;
+  }
+  &__icon {
+    padding-left: $space-s;
+  }
+}
