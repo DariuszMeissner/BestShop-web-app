@@ -1205,4 +1205,142 @@ h3 {
     border-bottom-color: #55dfb4;
   }
 }
+
+.pricing {
+  margin-top: 4rem;
+  background-color: #fff;
+}
+.pricing__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pricing__pack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 30px;
+  padding: 1rem;
+  margin: 0 5%;
+  background-color: #fff;
+}
+.pricing__pack--basic {
+  border-color: #fb3b64;
+}
+.pricing__pack--professional {
+  box-shadow: 0 0 5px 5px #07ace629;
+  border-color: #08a6e4;
+  margin: 0 0;
+}
+.pricing__pack--premium {
+  border-color: #55dfb4;
+}
+@media (min-width: 500px) {
+  .pricing__pack {
+    flex-direction: column;
+    margin: 0 20%;
+  }
+  .pricing__pack--professional {
+    border-color: #08a6e4;
+    margin: 0 15%;
+  }
+}
+@media (min-width: 736px) {
+  .pricing__pack {
+    margin: 0 30%;
+  }
+  .pricing__pack--professional {
+    border-color: #08a6e4;
+    margin: 0 25%;
+  }
+}
+@media (min-width: 1025px) {
+  .pricing__pack {
+    justify-content: center;
+    margin: 0 0;
+  }
+  .pricing__pack--basic {
+    margin: 0 2rem;
+  }
+  .pricing__pack--professional {
+    border-color: #08a6e4;
+    margin: 0 0;
+  }
+  .pricing__pack--premium {
+    margin: 0 2rem;
+  }
+}
+.pricing__subtitle {
+  font-size: 1.275rem;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+.pricing__price {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+.pricing__price--blue {
+  color: #08a6e4;
+}
+.pricing__price--red {
+  color: #fb3b64;
+}
+.pricing__price--green {
+  color: #55dfb4;
+}
+.pricing__badge {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.pricing__badge--inactive {
+  visibility: hidden;
+}
+.pricing__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  .pricing__feature--basic {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 500px) {
+  .pricing__feature--professional {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 500px) {
+  .pricing__feature--premium {
+    margin-top: 1.5rem;
+  }
+}
+.pricing__element {
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+}
+.pricing__element:nth-child(1n+0)::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../assets/Ckechmark-1.svg");
+  height: 11px;
+  width: 11px;
+  margin-right: 5px;
+}
+.pricing__element--not:nth-child(1n+0)::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../assets/Close.svg");
+  height: 11px;
+  width: 11px;
+  margin-right: 5px;
+}
 /*# sourceMappingURL=main.css.map */
