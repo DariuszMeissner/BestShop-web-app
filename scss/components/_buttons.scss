@@ -63,6 +63,7 @@
     background-color: $primary;
     border: 0;
     margin-top:$space-md;
+    box-shadow: $box-shadow-btn-primary;
     &:hover {
       background-color: color.scale($primary, $lightness: 20%);
     }
