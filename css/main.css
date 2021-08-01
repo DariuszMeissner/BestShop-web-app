@@ -753,7 +753,7 @@ h1 {
   font-weight: 400;
   line-height: 3.5rem;
 }
-@media (min-width: 1025px) {
+@media (min-width: 736px) {
   h1 {
     font-size: 3.0625rem;
   }
