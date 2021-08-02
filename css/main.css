@@ -1426,14 +1426,14 @@ h3 {
   }
 }
 .contact__description {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   background-color: #fff;
 }
 .contact__item {
   font-weight: bold;
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .contact__item--email::before {
   content: "";

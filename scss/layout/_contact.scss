@@ -16,14 +16,14 @@
     }
   }
   &__description {
-    margin-bottom: $space-md;
+    margin-bottom: $space-lg;
     background-color: $surface;
   }
   &__item {
     font-weight: bold;
     display: flex;
     align-items: center;
-    margin-bottom: $space-s;
+    margin-bottom: $space-sm;
     &--email {
       &::before {
         content: "";
