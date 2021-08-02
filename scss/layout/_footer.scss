@@ -2,9 +2,9 @@
 
 .footer {
   background-color: $background-variant;
-  height: 100px;
   display: flex;
   align-items: center;
+  height: 100px;
   &__company {
     display: flex;
     flex-direction: column;
@@ -18,6 +18,8 @@
   &__copyright {
     font-size: $font-size-xxs;
     color: $on-surface-secondary;
+    line-height: 100%;
+    margin-top: $space-xs;
   }
   &__icon {
     padding-left: $space-s;

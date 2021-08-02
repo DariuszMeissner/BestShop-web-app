@@ -1511,9 +1511,9 @@ h3 {
 
 .footer {
   background-color: #f2f2f2;
-  height: 100px;
   display: flex;
   align-items: center;
+  height: 100px;
 }
 .footer__company {
   display: flex;
@@ -1528,6 +1528,8 @@ h3 {
 .footer__copyright {
   font-size: 0.675rem;
   color: #a5a5a5;
+  line-height: 100%;
+  margin-top: 0.5rem;
 }
 .footer__icon {
   padding-left: 1rem;
