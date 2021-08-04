@@ -10,6 +10,7 @@
   padding: 1rem 4rem;
   border-radius: $radius-m;
   transition: 0.5s;
+  border: 0;
 }
 .opening {
   &__btn {
@@ -72,4 +73,19 @@
       box-shadow: $box-shadow-btn-primary;
     }
   }
+}
+.notify {
+  &__btn {
+    background-color: $primary;
+    padding: $space-sm $space-lg;
+    border-radius: $radius-xl;
+    box-shadow: $box-shadow-btn-primary;
+    &:hover {
+      background-color: color.scale($primary, $lightness: 20%);
+    }
+    & a {
+      color:$on-primary;
+    }
+  }
+  
 }

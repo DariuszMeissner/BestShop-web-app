@@ -802,6 +802,7 @@ h3 {
   padding: 1rem 4rem;
   border-radius: 30px;
   transition: 0.5s;
+  border: 0;
 }
 
 .opening__btn {
@@ -859,6 +860,19 @@ h3 {
 }
 .contact__btn:focus {
   box-shadow: 0 0 5px 5px #07ace629;
+}
+
+.notify__btn {
+  background-color: #08a6e4;
+  padding: 1.5rem 3rem;
+  border-radius: 40px;
+  box-shadow: 0 0 5px 5px #07ace629;
+}
+.notify__btn:hover {
+  background-color: #2bbef8;
+}
+.notify__btn a {
+  color: #fff;
 }
 
 .header {
