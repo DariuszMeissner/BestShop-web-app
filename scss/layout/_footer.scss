@@ -4,7 +4,7 @@
   background-color: $background-variant;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: $footer-height;
   &__company {
     display: flex;
     flex-direction: column;
