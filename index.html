@@ -203,6 +203,53 @@
         </div>
       </div>
     </section>
+    
+    <section class="calc">
+      <div class="container">
+        <h2 class="calc__title">Calculate how much you’ll pay</h2>
+
+        <div class="row">
+        
+          <div class="col-xs-12 col-sm-12 col-md-6 calc__box">
+            <form class="calc__form">
+              <div class="calc__item calc__item--form">
+                <input type="number" id="quantity" name="quantity" class="calc__input" placeholder="Products quantity">
+              </div>
+              <div class="calc__item calc__item--form">
+                <input type="number" id="orders" name="orders" class="calc__orders" placeholder="Estimated orders in month">
+              </div>
+              <div class="calc__item calc__item--form">
+                <select name="package" id="package" >
+                  <option value="" disabled selected hidden>Choose package</option>
+                  <option value="dog">Basic</option>
+                  <option value="cat">Professional</option>
+                  <option value="cat">Premium</option>
+                </select>
+              </div>
+              <div class="calc__item calc__item--form">
+                <label for="accounting" class="calc__label">
+                  <input type="checkbox" name="accounting" id="accounting" class="calc__accounting">
+                  <span class="calc__checkbox" title="Accept Accounting"></span>
+                  Accounting
+                </label>
+              </div>
+              <div class="calc__item calc__item--form">
+                <label for="payment" class="calc__label">
+                  <input type="checkbox" name="payment" id="payment" class="calc__payment">
+                  <span class="calc__checkbox" title="Accept of a payment terminal"></span>
+                  Rental of a payment terminal
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 calc__box">
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <section class="contact">
       <div class="container">
