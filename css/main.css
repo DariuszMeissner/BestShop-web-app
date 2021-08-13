@@ -1456,6 +1456,9 @@ h3 {
   border: 1px solid #08a6e4;
   box-shadow: 0 0 5px 5px #a9a9a929;
 }
+.calc__input:focus {
+  border-width: 2px;
+}
 
 .item__box {
   background-color: #08a6e4;

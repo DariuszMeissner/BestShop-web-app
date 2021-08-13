@@ -37,6 +37,9 @@
         border-radius: $radius-xs;
         border: 1px solid $primary;
         box-shadow: $box-shadow-gray;
+        &:focus {
+            border-width: 2px;
+        }
     }
    
 
