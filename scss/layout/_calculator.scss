@@ -20,11 +20,13 @@
         padding: $space-xs $space-sm;
         margin: $space-xs 0;
         border-radius: $radius-xs;
+        box-shadow: $box-shadow-gray;
         &--total{
             display: flex;
             justify-content: flex-end;
             background-color: transparent;
             padding: 0;
+            box-shadow: none;
         }
     }
     &__input {
@@ -34,6 +36,7 @@
         padding:$space-xs $space-sm;
         border-radius: $radius-xs;
         border: 1px solid $primary;
+        box-shadow: $box-shadow-gray;
     }
    
 
@@ -44,6 +47,7 @@
     padding: $space-xs $space-sm;
     margin: $space-xs 0;
     border-radius: $radius-xs;
+    box-shadow: $box-shadow-gray;
     .item__name {
         padding-right: $space-sm;
     }
