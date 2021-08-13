@@ -1,0 +1,60 @@
+.calc {
+    background-color: $background-variant;
+    padding: $space-section 0;
+    font-size: $font-size-xs;
+    &__title {
+       text-align: center; 
+       margin-bottom: $space-md;
+    }
+    &__form,&__summary {
+
+    }
+    &__box {
+        padding: $space-xs;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        color: $on-tertiary;
+        background-color: $tertiary;
+        padding: $space-xs $space-sm;
+        margin: $space-xs 0;
+        border-radius: $radius-xs;
+        &--total{
+            display: flex;
+            justify-content: flex-end;
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+    &__input {
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        padding:$space-xs $space-sm;
+        border-radius: $radius-xs;
+        border: 1px solid $primary;
+    }
+   
+
+}
+.item {
+    &__box {
+    background-color: $primary;
+    padding: $space-xs $space-sm;
+    margin: $space-xs 0;
+    border-radius: $radius-xs;
+    .item__name {
+        padding-right: $space-sm;
+    }
+    .item__total {
+        font-size: $font-size-s-mobile;
+        font-weight: $bold;
+    }
+    }
+    &__price {
+        font-size: $font-size-s-mobile;
+        font-weight: $bold;
+    }
+    
+}

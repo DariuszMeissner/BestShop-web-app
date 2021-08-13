@@ -212,30 +212,30 @@
         
           <div class="col-xs-12 col-sm-12 col-md-6 calc__container">
             <form class="calc__form">
-              <div class="calc__input">
+              <div class="calc__box">
                 <input type="number" id="quantity" name="quantity" class="calc__input" placeholder="Products quantity">
               </div>
-              <div class="calc__input">
+              <div class="calc__box">
                 <input type="number" id="orders" name="orders" class="calc__input" placeholder="Estimated orders in month">
               </div>
-              <div class="calc__input">
-                <select name="package" id="package" >
+              <div class="calc__box">
+                <select name="package" id="package">
                   <option value="" disabled selected hidden>Choose package</option>
                   <option value="basic">Basic</option>
                   <option value="professioal">Professional</option>
                   <option value="premium">Premium</option>
                 </select>
               </div>
-              <div class="calc__input">
+              <div class="calc__box">
                 <label for="accounting" class="calc__label">
-                  <input type="checkbox" name="accounting" id="accounting" class="calc__accounting">
+                  <input type="checkbox" name="accounting" id="accounting">
                   <span class="calc__checkbox" title="Accept Accounting"></span>
                   Accounting
                 </label>
               </div>
-              <div class="calc__input">
+              <div class="calc__box">
                 <label for="payment" class="calc__label">
-                  <input type="checkbox" name="terminal" id="terminal" class="termnal">
+                  <input type="checkbox" name="terminal" id="terminal">
                   <span class="calc__checkbox" title="Accept of a payment terminal"></span>
                   Rental of a payment terminal
                 </label>
@@ -247,12 +247,12 @@
             <div class="calc__summary">
                 <div id="products__summary" class="calc__item">
                   <span class="item__name">Products</span>
-                  <span class="item__subprice">20*$0.5</span>
+                  <span class="item__subprice">20 * $0.5</span>
                   <span class="item__price">$10</span>
                 </div>
                 <div id="orders__summary" class="calc__item">
                   <span class="item__name">Orders</span>
-                  <span class="item__subprice">20*$0.5</span>
+                  <span class="item__subprice">20 * $0.5</span>
                   <span class="item__price">$10</span>
                 </div>
                 <div id="package__summary" class="calc__item">
@@ -262,15 +262,17 @@
                 </div>
                 <div id="accounting__summary" class="calc__item">
                   <span class="item__name">Accounting</span>
-                  <span class="item__price">$10</span>
+                  <span class="item__price">$35</span>
                 </div>
                 <div id="terminal__summary" class="calc__item">
                   <span class="item__name">Terminal</span>
                   <span class="item__price">$10</span>
                 </div>
-                <div id="total__summary" class="calc__item">
-                  <span class="item__name">Total</span>
-                  <span class="item__total">$117.5</span>
+                <div id="total__summary" class="calc__item calc__item--total">
+                  <div class="item__box">
+                    <span class="item__name">Total</span>
+                    <span class="item__total">$117.5</span>
+                  </div>
                 </div>
             </div>
           </div>

@@ -1418,6 +1418,60 @@ h3 {
   margin-right: 5px;
 }
 
+.calc {
+  background-color: #f2f2f2;
+  padding: 4rem 0;
+  font-size: 0.875rem;
+}
+.calc__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.calc__box {
+  padding: 0.5rem;
+}
+.calc__item {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #55dfb4;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+.calc__item--total {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  padding: 0;
+}
+.calc__input {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #08a6e4;
+}
+
+.item__box {
+  background-color: #08a6e4;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+.item__box .item__name {
+  padding-right: 1.5rem;
+}
+.item__box .item__total {
+  font-size: 1.275rem;
+  font-weight: 700;
+}
+.item__price {
+  font-size: 1.275rem;
+  font-weight: 700;
+}
+
 .contact {
   margin-top: 4rem;
   padding-bottom: 4rem;
