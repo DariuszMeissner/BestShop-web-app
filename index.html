@@ -212,13 +212,13 @@
         
           <div class="col-xs-12 col-sm-12 col-md-6 calc__container">
             <form class="calc__form">
-              <div class="calc__item calc__item--form">
+              <div class="calc__input">
                 <input type="number" id="quantity" name="quantity" class="calc__input" placeholder="Products quantity">
               </div>
-              <div class="calc__item calc__item--form">
+              <div class="calc__input">
                 <input type="number" id="orders" name="orders" class="calc__input" placeholder="Estimated orders in month">
               </div>
-              <div class="calc__item calc__item--form">
+              <div class="calc__input">
                 <select name="package" id="package" >
                   <option value="" disabled selected hidden>Choose package</option>
                   <option value="basic">Basic</option>
@@ -226,16 +226,16 @@
                   <option value="premium">Premium</option>
                 </select>
               </div>
-              <div class="calc__item calc__item--form">
+              <div class="calc__input">
                 <label for="accounting" class="calc__label">
                   <input type="checkbox" name="accounting" id="accounting" class="calc__accounting">
                   <span class="calc__checkbox" title="Accept Accounting"></span>
                   Accounting
                 </label>
               </div>
-              <div class="calc__item calc__item--form">
+              <div class="calc__input">
                 <label for="payment" class="calc__label">
-                  <input type="checkbox" name="payment" id="payment" class="calc__payment">
+                  <input type="checkbox" name="terminal" id="terminal" class="termnal">
                   <span class="calc__checkbox" title="Accept of a payment terminal"></span>
                   Rental of a payment terminal
                 </label>
@@ -245,35 +245,33 @@
 
           <div class="col-xs-12 col-sm-12 col-md-6 calc__container">
             <div class="calc__summary">
-              <div class="calc__box calc__item--summary">
                 <div id="products__summary" class="calc__item">
-                  <span class="calc__title">Products</span>
-                  <span class="calc__subprice">20*$0.5</span>
-                  <span class="calc__price">$10</span>
+                  <span class="item__name">Products</span>
+                  <span class="item__subprice">20*$0.5</span>
+                  <span class="item__price">$10</span>
                 </div>
-                <div id="orders__summary" class="calc__box">
-                  <span class="calc__title">Orders</span>
-                  <span class="calc__subprice">20*$0.5</span>
-                  <span class="calc__price">$10</span>
+                <div id="orders__summary" class="calc__item">
+                  <span class="item__name">Orders</span>
+                  <span class="item__subprice">20*$0.5</span>
+                  <span class="item__price">$10</span>
                 </div>
-                <div id="package__summary" class="calc__box">
-                  <span class="calc__title">Package</span>
-                  <span class="calc__subprice">Premium</span>
-                  <span class="calc__price">$10</span>
+                <div id="package__summary" class="calc__item">
+                  <span class="item__name">Package</span>
+                  <span class="item__subprice">Premium</span>
+                  <span class="item__price">$10</span>
                 </div>
-                <div id="accounting__summary" class="calc__box calc__box--accounting">
-                  <span class="calc__title">Accounting</span>
-                  <span class="calc__price">$10</span>
+                <div id="accounting__summary" class="calc__item">
+                  <span class="item__name">Accounting</span>
+                  <span class="item__price">$10</span>
                 </div>
-                <div id="terminal__summary" class="calc__box calc__box--terminal">
-                  <span class="calc__title">Terminal</span>
-                  <span class="calc__price">$10</span>
+                <div id="terminal__summary" class="calc__item">
+                  <span class="item__name">Terminal</span>
+                  <span class="item__price">$10</span>
                 </div>
-                <div id="total__summary" class="calc__box calc__box--total">
-                  <span class="calc__title">Total</span>
-                  <span class="calc__total">$117.5</span>
+                <div id="total__summary" class="calc__item">
+                  <span class="item__name">Total</span>
+                  <span class="item__total">$117.5</span>
                 </div>
-              </div>
             </div>
           </div>
 
