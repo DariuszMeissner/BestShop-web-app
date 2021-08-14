@@ -11,6 +11,7 @@
     }
     &__box {
         padding: $space-xs;
+        
     }
     &__item {
         display: flex;
@@ -40,9 +41,7 @@
         &:focus {
             border-width: 2px;
         }
-    }
-   
-
+    } 
 }
 .item {
     &__box {
@@ -65,3 +64,37 @@
     }
     
 }
+
+//checkbox styling
+.calc{
+    &__hidedInput{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked + .calc__checkbox{
+        background-image: url('../../assets/Checkmark.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &:focus + .calc__checkbox{
+        box-shadow: $box-shadow-btn-primary;
+      }
+    }
+  }
+    
+  
+  .calc {
+    &__checkbox {
+      display: inline-block;
+      height: 25px;
+      width: 25px;
+      border: 1px solid $on-surface-secondary;
+      cursor: pointer;
+      margin-right: $space-xs;
+      border-radius: $radius-xs;
+      vertical-align: middle;
+    }
+  }
+  

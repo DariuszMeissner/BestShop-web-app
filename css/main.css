@@ -1479,6 +1479,33 @@ h3 {
   font-weight: 700;
 }
 
+.calc__hidedInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.calc__hidedInput:checked + .calc__checkbox {
+  background-image: url("../../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.calc__hidedInput:focus + .calc__checkbox {
+  box-shadow: 0 0 5px 5px #07ace629;
+}
+
+.calc__checkbox {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #a5a5a5;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
 .contact {
   margin-top: 4rem;
   padding-bottom: 4rem;
