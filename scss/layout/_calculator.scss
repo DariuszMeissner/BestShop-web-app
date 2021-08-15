@@ -11,7 +11,6 @@
     }
     &__box {
         padding: $space-xs;
-        
     }
     &__item {
         display: flex;
@@ -41,8 +40,11 @@
         &:focus {
             border-width: 2px;
         }
+    }
+    &__label {
+      line-height: 25px;
     } 
-}
+  }
 .item {
     &__box {
     background-color: $primary;
@@ -94,7 +96,8 @@
       cursor: pointer;
       margin-right: $space-xs;
       border-radius: $radius-xs;
-      vertical-align: middle;
+      vertical-align: top;
+      
     }
   }
   

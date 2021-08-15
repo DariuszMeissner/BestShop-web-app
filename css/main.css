@@ -1459,6 +1459,9 @@ h3 {
 .calc__input:focus {
   border-width: 2px;
 }
+.calc__label {
+  line-height: 25px;
+}
 
 .item__box {
   background-color: #08a6e4;
@@ -1503,7 +1506,7 @@ h3 {
   cursor: pointer;
   margin-right: 0.5rem;
   border-radius: 5px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .contact {
