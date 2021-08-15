@@ -213,13 +213,13 @@
           <div class="col-xs-12 col-sm-12 col-md-6 calc__container">
             <form class="calc__form">
               <div class="calc__box">
-                <input type="number" id="quantity" name="quantity" class="calc__input" placeholder="Products quantity">
+                <input type="number" id="quantity" name="quantity" class="calc__input" title="Please insert number of products" placeholder="Products quantity">
               </div>
               <div class="calc__box">
-                <input type="number" id="orders" name="orders" class="calc__input" placeholder="Estimated orders in month">
+                <input type="number" id="orders" name="orders" class="calc__input" title="Please insert number of orders in month"placeholder="Estimated orders in month">
               </div>
               <div class="calc__box">
-                <select name="package" id="package">
+                <select name="package" id="package" class="calc__input">
                   <option value="" disabled selected hidden>Choose package</option>
                   <option value="basic">Basic</option>
                   <option value="professioal">Professional</option>
@@ -301,10 +301,10 @@
           <div class="col-xs-12 col-sm-12 col-md-6">
             <form class="contact__form">
               <label for="name" class="contact__label">Name
-                <input type="text" name="name" id="name" class="contact__input" required>
+                <input type="text" name="name" id="name" class="contact__input" title="Please insert your name" required>
               </label>
               <label for="email" class="contact__label">Email
-                <input type="email" name="email" id="email" class="contact__input" required>
+                <input type="email" name="email" id="email" class="contact__input" title="Please insert your email" required>
               </label>
               <label for="policy" class="contact__label--policy">
                 <input type="checkbox" name="policy" id="policy" class="contact__hidedInput" required>
