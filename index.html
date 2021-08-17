@@ -219,12 +219,15 @@
                 <input type="number" id="orders" name="orders" class="calc__input" placeholder="Estimated orders in month">
               </div>
               <div class="calc__box">
-                <select name="package" id="package" class="calc__input">
-                  <option value="" disabled selected hidden>Choose package</option>
-                  <option value="basic">Basic</option>
-                  <option value="professioal">Professional</option>
-                  <option value="premium">Premium</option>
-                </select>
+                <div id="package" class="calc__select">
+                  <input type="checkbox" id="calc__btn" class="calc__btn" />
+                  <label for="calc__btn" class="calc__toogle">Choose package</label>
+                  <ul class="calc__dropdown">
+                    <li class="dropdown__item" value="basic">Basic</li>
+                    <li class="dropdown__item" value="professional">Professional</li>
+                    <li class="dropdown__item" value="premium">Premium</li>
+                  </ul>
+                </div>
               </div>
               <div class="calc__box">
                 <label for="accounting" class="calc__label">
