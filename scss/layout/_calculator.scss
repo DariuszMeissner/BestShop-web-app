@@ -37,11 +37,24 @@
         &:focus {
             border-width: 2px;
         }
-        
+        &--select {
+          background-color: $surface;
+          color: $on-surface-secondary;
+          display: block;
+        }
     }
-    &__label {
-      line-height: 25px;
-    } 
+    &__select {
+      position: relative;
+    }
+    &__dropdown {
+      background-color: $surface;
+      margin: $space-xs 0;
+      padding: $space-xs $space-sm;
+      border: 1px solid $secondary;
+      border-radius: $radius-xs;
+      position: absolute;
+      z-index: 99;width: 100%;
+    }
   }
 .item {
     &__box {
@@ -84,7 +97,6 @@
     }
   }
     
-  
   .calc {
     &__checkbox {
       display: inline-block;
@@ -98,3 +110,21 @@
     }
   }
   
+  // Dropdown styling
+.calc {
+  &__btn {
+    display: none;
+    &:checked {
+      ~ .calc__dropdown {
+        display: block;
+      }
+    }
+  }
+  &__dropdown {
+    display: none;
+  }
+}
+
+::placeholder {
+  color: $on-surface-secondary;
+}

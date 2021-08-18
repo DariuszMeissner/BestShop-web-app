@@ -1488,8 +1488,23 @@ h3 {
 .calc__input:focus {
   border-width: 2px;
 }
-.calc__label {
-  line-height: 25px;
+.calc__input--select {
+  background-color: #fff;
+  color: #a5a5a5;
+  display: block;
+}
+.calc__select {
+  position: relative;
+}
+.calc__dropdown {
+  background-color: #fff;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #fb3b64;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
 }
 
 .item__box {
@@ -1536,6 +1551,28 @@ h3 {
   margin-right: 0.5rem;
   border-radius: 5px;
   vertical-align: top;
+}
+
+.calc__btn {
+  display: none;
+}
+.calc__btn:checked ~ .calc__dropdown {
+  display: block;
+}
+.calc__dropdown {
+  display: none;
+}
+
+::-moz-placeholder {
+  color: #a5a5a5;
+}
+
+:-ms-input-placeholder {
+  color: #a5a5a5;
+}
+
+::placeholder {
+  color: #a5a5a5;
 }
 
 .contact {
