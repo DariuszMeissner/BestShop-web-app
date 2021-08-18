@@ -13,8 +13,6 @@ After builded static page, I will upgrade the page based on JS ES6 and React.js.
 - full responsive
 - modular sections of page(BEM)
 - grid system
-- securing before send empty form fields
-- redirecting to thank you page after submit form
 - full customize of: colors, fonts size, space, shapes,
 
 
