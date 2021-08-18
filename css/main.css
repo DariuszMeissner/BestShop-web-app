@@ -1499,7 +1499,6 @@ h3 {
 .calc__dropdown {
   background-color: #fff;
   margin: 0.5rem 0;
-  padding: 0.5rem 1.5rem;
   border: 1px solid #fb3b64;
   border-radius: 5px;
   position: absolute;
@@ -1561,6 +1560,15 @@ h3 {
 }
 .calc__dropdown {
   display: none;
+}
+
+.dropdown__item {
+  padding: 0.5rem 1.5rem;
+}
+.dropdown__item:hover {
+  background-color: #08a6e4;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
 }
 
 ::-moz-placeholder {
