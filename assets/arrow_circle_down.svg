@@ -2,17 +2,17 @@
 <svg
    viewBox="0 0 512 512"
    version="1.1"
-   id="svg1275"
-   sodipodi:docname="arrow_circle_top.svg"
+   id="svg23"
+   sodipodi:docname="arrow_circle_down.svg"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs1279" />
+     id="defs27" />
   <sodipodi:namedview
-     id="namedview1277"
+     id="namedview25"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -20,25 +20,26 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.79296875"
-     inkscape:cx="-328.51232"
-     inkscape:cy="211.23153"
+     inkscape:zoom="0.76464844"
+     inkscape:cx="-191.59132"
+     inkscape:cy="352.44955"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="2391"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1275" />
+     inkscape:current-layer="svg23" />
   <path
      fill="var(--ci-primary-color, currentColor)"
-     d="M256,16C123.452,16,16,123.452,16,256S123.452,496,256,496,496,388.548,496,256,388.548,16,256,16ZM403.078,403.078a207.253,207.253,0,1,1,44.589-66.125A207.332,207.332,0,0,1,403.078,403.078Z"
+     d="M 256,496 C 388.548,496 496,388.548 496,256 496,123.452 388.548,16 256,16 123.452,16 16,123.452 16,256 16,388.548 123.452,496 256,496 Z M 108.922,108.922 a 207.253,207.253 0 1 1 -44.589,66.125 207.332,207.332 0 0 1 44.589,-66.125 z"
      class="ci-primary"
-     id="path1271"
+     id="path19"
      style="stroke:none;fill:#08a6e4;fill-opacity:1" />
   <polygon
      fill="var(--ci-primary-color, currentColor)"
-     points="142.319 241.027 164.947 263.654 240 188.602 240 376 272 376 272 188.602 347.053 263.654 369.681 241.027 256 127.347 142.319 241.027"
+     points="240,188.602 240,376 272,376 272,188.602 347.053,263.654 369.681,241.027 256,127.347 142.319,241.027 164.947,263.654 "
      class="ci-primary"
-     id="polygon1273"
+     id="polygon21"
+     transform="rotate(180,256,251.6735)"
      style="stroke:none;fill:#08a6e4;fill-opacity:1" />
 </svg>

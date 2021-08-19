@@ -1481,7 +1481,7 @@ h3 {
   background-color: #fff;
   color: #a5a5a5;
   font-family: "Open Sans", sans-serif;
-  background-image: url("/assets/arrow_circle_top.svg");
+  background-image: url("/assets/arrow_circle_down.svg");
   background-repeat: no-repeat;
   background-position: center right 10px;
   background-size: 25px;
@@ -1550,6 +1550,9 @@ h3 {
 }
 .calc__btn:checked ~ .calc__dropdown {
   display: block;
+}
+.calc__btn:checked ~ .calc__input--select {
+  background-image: url("/assets/arrow_circle_top.svg");
 }
 .calc__dropdown {
   display: none;
