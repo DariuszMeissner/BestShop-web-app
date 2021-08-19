@@ -1,26 +1,26 @@
-[data-title]:hover:after {
-    opacity: 1;
-    transition: all 0.1s ease 0.5s;
-    visibility: visible;
-}
-[data-title]:after {
-    content: attr(data-title);
-    background-color: $primary;
-    color: $on-primary;
-    font-size: $font-size-xxs;
-    border-radius: $radius-xs;
-    font-weight: $regular;
-    letter-spacing: 1px;
-    text-transform: lowercase;
-    position: absolute;
-    padding: 1px 5px 2px 5px;
-    bottom:-30px;
-    left: 0;
-    white-space: nowrap;
-    opacity: 0;
-    z-index: 99999;
-    visibility: hidden;
-}
-[data-title] {
-    position: relative;
-}
+// [data-title]:hover:after {
+//     opacity: 1;
+//     transition: all 0.1s ease 0.5s;
+//     visibility: visible;
+// }
+// [data-title]:after {
+//     content: attr(data-title);
+//     background-color: $primary;
+//     color: $on-primary;
+//     font-size: $font-size-xxs;
+//     border-radius: $radius-xs;
+//     font-weight: $regular;
+//     letter-spacing: 1px;
+//     text-transform: lowercase;
+//     position: absolute;
+//     padding: 1px 5px 2px 5px;
+//     bottom:-30px;
+//     left: 0;
+//     white-space: nowrap;
+//     opacity: 0;
+//     z-index: 99999;
+//     visibility: hidden;
+// }
+// [data-title] {
+//     position: relative;
+// }
