@@ -3,7 +3,7 @@
   width: 100%;
   box-shadow: $box-shadow-header;
   background-color: $background;
-  z-index: 3;
+  z-index: 99;
 
   &--container {
     display: flex;
