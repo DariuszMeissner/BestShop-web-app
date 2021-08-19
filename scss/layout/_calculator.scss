@@ -34,12 +34,21 @@
         border-radius: $radius-xs;
         border: 1px solid $primary;
         box-shadow: $box-shadow-gray;
+        color: $on-surface;
+        line-height: 1.3rem;
         &:focus {
-            border-width: 2px;
+            border-color: $secondary;
+
+        }
+        &::placeholder {
+          color: $on-surface-secondary;
+          opacity: 1;
+          font-family: $font-family-base;
         }
         &--select {
           background-color: $surface;
           color: $on-surface-secondary;
+          font-family: $font-family-base;;
           display: block;
         }
     }
@@ -132,9 +141,7 @@
     padding: $space-xs $space-sm;
   }
 }
-::placeholder {
-  color: $on-surface-secondary;
-}
 .d--none {
   display: none;
 }
+
