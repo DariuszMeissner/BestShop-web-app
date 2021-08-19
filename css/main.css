@@ -1477,10 +1477,14 @@ h3 {
   font-family: "Open Sans", sans-serif;
 }
 .calc__input--select {
+  display: block;
   background-color: #fff;
   color: #a5a5a5;
   font-family: "Open Sans", sans-serif;
-  display: block;
+  background-image: url("/assets/arrow_circle_top.svg");
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  background-size: 25px;
 }
 .calc__select {
   position: relative;
