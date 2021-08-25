@@ -47,6 +47,7 @@
         }
         &--select {
           display: block;
+          cursor: pointer;
           background-color: $surface;
           color: $on-surface-secondary;
           font-family: $font-family-base;
@@ -144,6 +145,7 @@
 
 .dropdown__item {
     padding: $space-xs $space-sm;
+    cursor: pointer;
   &:hover {
     background-color: $primary;
     color: $on-primary;
