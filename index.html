@@ -213,7 +213,7 @@
           <div class="col-xs-12 col-sm-12 col-md-6 calc__container">
             <form class="calc__form">
               <div class="calc__box" data-title="Please insert number of products">
-                <input type="number" id="quantity" name="quantity" class="calc__input"  placeholder="Products quantity">
+                <input type="number" id="product" name="product" class="calc__input"  placeholder="Products quantity">
               </div>
               <div class="calc__box" data-title="Please insert number of orders in month">
                 <input type="number" id="orders" name="orders" class="calc__input" placeholder="Estimated orders in month">
@@ -221,11 +221,12 @@
               <div class="calc__box">
                 <div id="package" class="calc__select">
                   <input type="checkbox" id="calc__btn" class="calc__btn" />
-                  <label for="calc__btn" class="calc__input calc__input--select" data-value="">Choose package</label>
-                  <ul class="calc__dropdown">
-                    <li class="dropdown__item" value="basic">Basic</li>
-                    <li class="dropdown__item" value="professional">Professional</li>
-                    <li class="dropdown__item" value="premium">Premium</li>
+                  <label id="calc__dropdown" for="calc__btn" class="calc__input calc__input--select">Choose package</label>
+                  <ul  class="calc__dropdown">
+                    <li id="none" class="dropdown__item" data-value="none">None</li>
+                    <li id="basic" class="dropdown__item" data-value="basic">Basic</li>
+                    <li id="professional" class="dropdown__item" data-value="professional">Professional</li>
+                    <li id="premium" class="dropdown__item" data-value="premium">Premium</li>
                   </ul>
                 </div>
               </div>
@@ -251,30 +252,30 @@
                 <div id="products__summary" class="calc__item d--none">
                   <span class="item__name">Products</span>
                   <span class="item__subprice">20 * $0.5</span>
-                  <span class="item__price">$10</span>
+                  <span class="item__price"></span>
                 </div>
                 <div id="orders__summary" class="calc__item d--none">
                   <span class="item__name">Orders</span>
                   <span class="item__subprice">20 * $0.5</span>
-                  <span class="item__price">$10</span>
+                  <span class="item__price"></span>
                 </div>
                 <div id="package__summary" class="calc__item d--none">
                   <span class="item__name">Package</span>
                   <span class="item__subprice">Premium</span>
-                  <span class="item__price">$10</span>
+                  <span class="item__price"></span>
                 </div>
                 <div id="accounting__summary" class="calc__item d--none">
                   <span class="item__name">Accounting</span>
-                  <span class="item__price">$35</span>
+                  <span class="item__price"></span>
                 </div>
                 <div id="terminal__summary" class="calc__item d--none">
                   <span class="item__name">Terminal</span>
-                  <span class="item__price">$10</span>
+                  <span class="item__price"></span>
                 </div>
                 <div id="total__summary" class="calc__item calc__item--total d--none">
                   <div class="item__box">
                     <span class="item__name">Total</span>
-                    <span class="item__total">$117.5</span>
+                    <span class="item__total"></span>
                   </div>
                 </div>
             </div>
