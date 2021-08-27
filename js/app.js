@@ -1,5 +1,6 @@
 class Calculator {
   constructor() {
+
     this.prices = {
       product: 0.5,
       orders: 0.25,
@@ -38,25 +39,60 @@ class Calculator {
   }
 }
 
+
 class Total extends Calculator {
-  show(id,value) {
-    console.log(id,value);
+  showTotal(id,value) {
+
+    this.totals = this.total.product + this.total.orders + this.total.accounting + this.total.terminal + this.total.package;
+    
+    if (this.totals != 0) {
+      this.total[id] = value;
+      this.summary.total.classList.remove("d--none");
+      this.summary.total.firstElementChild.lastElementChild.innerText = `$${this.totals}`;
+    } else {
+      this.summary.total.classList.add("d--none");
+    }
   }
 }
-class FormInputs extends Total {
+class Summary extends Total {
+
+  show(id, value, priceTotal) {
+    if (value == 0 || value == false || value == "none") {
+      this.summary[id].classList.add("d--none");
+      this.total[id] = 0;
+      this.showTotal(id, priceTotal);
+    } else if (value == "Basic" || value == "Professional" || value == "Premium") {
+      this.summary[id].classList.remove("d--none");
+      this.summary[id].children[1].innerText = value;
+      this.summary[id].lastElementChild.innerText = `$${priceTotal}`;
+      this.total[id] = priceTotal;
+      this.showTotal(id, priceTotal);
+    } else {
+      this.summary[id].classList.remove("d--none");
+      this.summary[id].children[1].innerText = `${value} * $${this.prices[id]}`;
+      this.summary[id].lastElementChild.innerText = `$${priceTotal}`;
+      this.total[id] = priceTotal;
+      this.showTotal(id, priceTotal);
+    }
+  }
+}
+
+class FormInputs extends Summary {
 
   inputEvents(e) {
-    this.value = e.currentTarget.value;
     this.id = e.currentTarget.id;
+    this.value = e.currentTarget.value;
+    this.priceTotal = this.value * this.prices[this.id];
 
-    this.show(this.id,this.value);
+    this.show(this.id,this.value,this.priceTotal);
   }
 
   checkboxEvents(e) {
     this.id = e.currentTarget.id;
     this.value = e.currentTarget.checked;
+    this.priceTotal = this.value * this.prices[this.id];
     
-    this.show(this.id,this.value);
+    this.show(this.id,this.value,this.priceTotal);
   }
 
   selectEvents(e) {
@@ -68,7 +104,7 @@ class FormInputs extends Total {
     this.form.package.style.color = "black";
     this.form.package.innerText = this.value;
     
-    this.show(this.id,this.value);
+    this.show(this.id,this.value,this.priceTotal);
   }
   dropdownEvents() {
     if (this.form.packageList.style.display == "block") {
@@ -80,6 +116,7 @@ class FormInputs extends Total {
 }
 
 class ListenerEvents extends FormInputs {
+  
    events() {
      // handling inputs
     this.form.product.addEventListener("input", (e) => this.inputEvents(e));
