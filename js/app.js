@@ -37,18 +37,59 @@ class Calculator {
     };
   }
 }
-class input extends Calculator{
+
+class Total extends Calculator {
+  show(id,value) {
+    console.log(id,value);
+  }
+}
+class FormInputs extends Total {
+
   inputEvents(e) {
-    this.id = e.currentTarget.id;
     this.value = e.currentTarget.value;
+    this.id = e.currentTarget.id;
+
+    this.show(this.id,this.value);
+  }
+
+  checkboxEvents(e) {
+    this.id = e.currentTarget.id;
+    this.value = e.currentTarget.checked;
     
-    console.log(this.id,this.value);
+    this.show(this.id,this.value);
+  }
+
+  selectEvents(e) {
+    this.id = 'package';
+    this.value = e.currentTarget.innerText;
+    this.priceTotal = Number(e.currentTarget.dataset.value);
+
+    this.form.packageList.style.display = "none";
+    this.form.package.style.color = "black";
+    this.form.package.innerText = this.value;
+    
+    this.show(this.id,this.value);
+  }
+  dropdownEvents() {
+    if (this.form.packageList.style.display == "block") {
+      this.form.packageList.style.display = "none";
+    } else {
+      this.form.packageList.style.display = "block";
+    }
   }
 }
 
-class ListenerEvents extends input {
+class ListenerEvents extends FormInputs {
    events() {
+     // handling inputs
     this.form.product.addEventListener("input", (e) => this.inputEvents(e));
+    this.form.orders.addEventListener("input", (e) => this.inputEvents(e));
+    // handling checkbox eventlistener
+    this.form.accounting.addEventListener("change", (e) => this.checkboxEvents(e));
+    this.form.terminal.addEventListener("change", (e) => this.checkboxEvents(e));
+    // handling select eventlistener
+    this.form.packageItems.forEach( (el) => el.addEventListener("click", (e) => this.selectEvents(e)));
+    this.form.package.addEventListener("click", (e) => this.dropdownEvents(e));
    }
 };
 
