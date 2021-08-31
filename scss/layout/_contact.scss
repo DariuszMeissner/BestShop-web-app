@@ -28,7 +28,7 @@
       &::before {
         content: "";
         display: inline-block;
-        background-image: url("../../assets/Mail Icon.svg");
+        background-image: url("/assets/Mail Icon.svg");
         background-repeat: no-repeat;
         height: 22px;
         width: 2rem;
@@ -39,7 +39,7 @@
       &::before {
         content: "";
         display: inline-block;
-        background-image: url("../../assets/Phone Icon.svg");
+        background-image: url("/assets/Phone Icon.svg");
         background-repeat: no-repeat;
         height: 24px;
         width: 2rem;
@@ -82,7 +82,7 @@
     height: 0;
     width: 0;
     &:checked + .contact__checkbox{
-      background-image: url('../../assets/Checkmark.svg');
+      background-image: url('/assets/Checkmark.svg');
       background-repeat: no-repeat;
       background-position: center;
     }
