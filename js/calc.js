@@ -124,7 +124,8 @@ class Calculator {
     }
   }
   
-  const calc = new ListenerEvents();
-  calc.events();
   
-
+  export {
+      ListenerEvents
+  }
+  
