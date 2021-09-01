@@ -1,6 +1,6 @@
 const path = require("path");
 const Html = require("html-webpack-plugin");
-
+const CompressionPlugin = require("compression-webpack-plugin");
 
 const entryPath = ".";
 
@@ -32,6 +32,10 @@ module.exports = {
     new Html({
       filename: "index.html",
       template: "./index.html",
+    }),
+    new CompressionPlugin({
+      threshold: 0,
+      minRatio: 0.8,
     }),
   ],
 };
