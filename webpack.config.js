@@ -7,16 +7,14 @@ module.exports = {
   output: {
     filename: "out.js",
     path: path.resolve(__dirname, `${entryPath}/build`),
+    publicPath: '/build/',
   },
-
   devServer: {
-    contentBase: path.join(__dirname, `${entryPath}`),
-    publicPath: "/build/",
+    static: path.join(__dirname, `${entryPath}`),
     compress: true,
-    port: 3001,
-    open:true // opening browser on 'npm start'
+    port: 8080,
+    open: true,
   },
-
   module: {
     rules: [
       {
