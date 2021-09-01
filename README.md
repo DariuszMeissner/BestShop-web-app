@@ -4,7 +4,7 @@ This is web application which we are making during workshop Coders Lab school.
 I will be building web application based on HTML5, CSS3, SASS, RWD and BEM metodology.
 
 ## What next?
-After builded static page, I will upgrade the page based on JS ES6 and React.js.
+After builded static page, I will upgrade the page based on JS ES6.
 
 
 ## Features
