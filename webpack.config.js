@@ -1,5 +1,9 @@
 const path = require("path");
+const Html = require("html-webpack-plugin");
+
+
 const entryPath = ".";
+
 
 module.exports = {
   entry: `./${entryPath}/js/app.js`,
@@ -24,4 +28,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new Html({
+      filename: "index.html",
+      template: "./index.html",
+    }),
+  ],
 };
