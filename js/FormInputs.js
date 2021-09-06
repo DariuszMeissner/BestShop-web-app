@@ -21,7 +21,7 @@ class FormInputs extends Summary {
       this.id = "package";
       this.value = e.currentTarget.innerText;
       this.priceTotal = Number(e.currentTarget.dataset.value);
-  
+
       this.form.packageList.style.display = "none";
       this.form.package.style.color = "black";
       this.form.package.innerText = this.value;
@@ -29,11 +29,8 @@ class FormInputs extends Summary {
       this.show(this.id, this.value, this.priceTotal);
     }
     dropdownEvents() {
-      if (this.form.packageList.style.display == "block") {
-        this.form.packageList.style.display = "none";
-      } else {
-        this.form.packageList.style.display = "block";
-      }
+      (this.form.packageList.style.display == "block")?this.form.packageList.style.display = "none":this.form.packageList.style.display = "block";
+
     }
 }
 
