@@ -1,5 +1,5 @@
 import ListenerEvents from './EventsListener';
-import validateListenerEvents from './ContactValidation';
+import ValidateForm from './ContactValidation';
 
 // calling calculator
 const calc = new ListenerEvents();
@@ -9,5 +9,5 @@ calc.events();
 let nameInput = document.querySelector('#name');
 let emailInput = document.querySelector('#email');
 
-const validate = new validateListenerEvents(nameInput,emailInput);
-validate.events();
+const initEvents = new ValidateForm(nameInput,emailInput);
+initEvents.events();

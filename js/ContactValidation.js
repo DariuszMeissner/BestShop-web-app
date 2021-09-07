@@ -1,4 +1,4 @@
-class ValidateInputs {
+class ValidateForm {
   constructor(nameValue, emailValue) {
     this.nameValue = nameValue;
     this.emailValue = emailValue;
@@ -10,28 +10,22 @@ class ValidateInputs {
       name: document.querySelector("#name"),
       email: document.querySelector("#email"),
       submit: document.querySelector("#submit__btn"),
+      }
     };
-  }
-}
 
-class FormInputs extends ValidateInputs {
-  inputEvents(e) {
+    inputEvents(e) {
     
-  }
-  submitAction(e) {
-    e.preventDefault();
-    (this.nameValue.value.match(this.lettersRegex) && this.emailValue.value.match(this.emailRegex) )?console.log('done'):console.log('error');
-
-    
-  }
+    }
+    submitAction(e) {
+      e.preventDefault();
+      (this.nameValue.value.match(this.lettersRegex) && this.emailValue.value.match(this.emailRegex) )?console.log('done'):console.log('error');
+    }
+    events() {
+      this.form.name.addEventListener("change", (e) => this.inputEvents(e));
+      this.form.email.addEventListener("change", (e) => this.inputEvents(e));
+      this.form.submit.addEventListener("click", (e) => this.submitAction(e));
+    }
 }
 
-class validateListenerEvents extends FormInputs {
-  events() {
-    this.form.name.addEventListener("change", (e) => this.inputEvents(e));
-    this.form.email.addEventListener("change", (e) => this.inputEvents(e));
-    this.form.submit.addEventListener("click", (e) => this.submitAction(e));
-  }
-}
 
-export default validateListenerEvents;
+export default ValidateForm;
