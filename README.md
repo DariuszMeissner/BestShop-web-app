@@ -9,7 +9,7 @@ This is web application which i'm making during workshop Coders Lab school.
 * [Features](#features)
 * [What next](#what-next)
 * [How To Use](#how-to-use)
-* [Mockup](#mockup)
+* [Mockup desktop](#mockup-desktop)
 
 
 ## Introduction
