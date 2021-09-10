@@ -4,6 +4,8 @@
 # BestShop-web-app
 This is web application which i'm making during workshop Coders Lab school.
 
+### demo https://dariuszmeissner.github.io/BestShop-web-app/
+
 ## Table of contents
 * [Introduction](#introduction)
 * [Features](#features)
