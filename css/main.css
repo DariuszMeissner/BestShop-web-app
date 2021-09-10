@@ -1013,7 +1013,7 @@ h3 {
   margin-bottom: 2rem;
 }
 .opening__img {
-  background-image: url("/assets/Background.png");
+  background-image: url("../assets/Background.png");
   height: 40vh;
   background-size: cover;
   background-position: top center;
@@ -1203,7 +1203,7 @@ h3 {
   height: 350px;
   width: 100%;
   background-color: #55dfb4;
-  background-image: url("/assets/Trumpet.png");
+  background-image: url("../assets/Trumpet.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 70px;
