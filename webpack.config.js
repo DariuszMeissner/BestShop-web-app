@@ -29,10 +29,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new Html({
-      filename: "index.html",
-      template: "./index.html",
-    }),
     new CompressionPlugin({
       threshold: 0,
       minRatio: 0.8,
