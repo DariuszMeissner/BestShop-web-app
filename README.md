@@ -1,11 +1,19 @@
+<img src="/assets/BestShop%20Mockup/layout-desktop-section-1.jpg" alt="alt text" width="800" />
+<img src="/assets/BestShop%20Mockup/layout-desktop-section-2.jpg" alt="alt text" width="800" />
+
 # BestShop-web-app
+This is web application which i'm making during workshop Coders Lab school.
 
-This is web application which we are making during workshop Coders Lab school.
-I will be building web application based on HTML5, CSS3, SASS, RWD and BEM metodology.
+## Table of contents
+* [Introduction](#introduction)
+* [Features](#features)
+* [What next](#what-next)
+* [How To Use](#how-to-use)
+* [Mockup desktop](#mockup-desktop)
 
-## What next?
-After builded static page, I will upgrade the page based on JS ES6.
 
+## Introduction
+Landing page based on HTML5, CSS3, SASS, RWD, BEM metodology and JavaScript.
 
 ## Features
 - sticky header
@@ -13,8 +21,27 @@ After builded static page, I will upgrade the page based on JS ES6.
 - full responsive
 - modular sections of page(BEM)
 - grid system
-- full customize of: colors, fonts size, space, shapes,
+- full customize from variables: colors, fonts size, space, shapes,
+- product calculator
 
+## What next
+- improvement of calculator logic
+- implement of fields validation for contact form
+- implement tooltips
+- implement React 
+
+## How To Use
+To run this app You need clone this repo and run `npm install` to install all the dependencies. <br/>
+After installed dependencies you can run `npm start` to start application.
+
+## Mockup desktop
+<img src="/assets/BestShop%20Mockup/layout-desktop-section-1.jpg" alt="alt text" width="700" />
+<img src="/assets/BestShop%20Mockup/layout-desktop-section-2.jpg" alt="alt text" width="700" />
+<img src="/assets/BestShop%20Mockup/layout-desktop-section-3.jpg" alt="alt text" width="700" />
+<img src="/assets/BestShop%20Mockup/layout-desktop-section-4.jpg" alt="alt text" width="700" />
+<img src="/assets/BestShop%20Mockup/layout-desktop-section-5.jpg" alt="alt text" width="700" />
+<img src="/assets/BestShop%20Mockup/layout-desktop-section-6.jpg" alt="alt text" width="700" />
+<img src="/assets/BestShop%20Mockup/layout-desktop-section-7.jpg" alt="alt text" width="700" />
 
 
 
