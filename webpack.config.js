@@ -2,7 +2,7 @@ const path = require("path");
 const Html = require("html-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 
-const entryPath = ".";
+const entryPath = "./development";
 
 
 module.exports = {
@@ -10,8 +10,8 @@ module.exports = {
 
   output: {
     filename: "out.js",
-    path: path.resolve(__dirname, `${entryPath}/build`),
-    publicPath: '/build/',
+    path: path.resolve(__dirname, `./distribution`),
+    publicPath: './distribution/',
   },
   devServer: {
     static: path.join(__dirname, `${entryPath}`),
