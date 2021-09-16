@@ -2,7 +2,7 @@ const path = require("path");
 const Html = require("html-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 
-const entryPath = ".";
+const entryPath = "./development";
 
 
 module.exports = {
