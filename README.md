@@ -1,5 +1,5 @@
-<img src="/assets/BestShop%20Mockup/layout-desktop-section-1.jpg" alt="alt text" width="800" />
-<img src="/assets/BestShop%20Mockup/layout-desktop-section-2.jpg" alt="alt text" width="800" />
+<img src="/development/assets/BestShop%20Mockup/layout-desktop-section-1.jpg" alt="alt text" width="800" />
+<img src="/development/assets/BestShop%20Mockup/layout-desktop-section-2.jpg" alt="alt text" width="800" />
 
 # BestShop-web-app
 This is web application which i'm making during workshop Coders Lab school.
@@ -37,13 +37,13 @@ To run this app You need clone this repo and run `npm install` to install all th
 After installed dependencies you can run `npm start` to start application.
 
 ## Mockup desktop
-<img src="/assets/BestShop%20Mockup/layout-desktop-section-1.jpg" alt="alt text" width="700" />
-<img src="/assets/BestShop%20Mockup/layout-desktop-section-2.jpg" alt="alt text" width="700" />
-<img src="/assets/BestShop%20Mockup/layout-desktop-section-3.jpg" alt="alt text" width="700" />
-<img src="/assets/BestShop%20Mockup/layout-desktop-section-4.jpg" alt="alt text" width="700" />
-<img src="/assets/BestShop%20Mockup/layout-desktop-section-5.jpg" alt="alt text" width="700" />
-<img src="/assets/BestShop%20Mockup/layout-desktop-section-6.jpg" alt="alt text" width="700" />
-<img src="/assets/BestShop%20Mockup/layout-desktop-section-7.jpg" alt="alt text" width="700" />
+<img src="/development/assets/BestShop%20Mockup/layout-desktop-section-1.jpg" alt="alt text" width="700" />
+<img src="/development/assets/BestShop%20Mockup/layout-desktop-section-2.jpg" alt="alt text" width="700" />
+<img src="/development/assets/BestShop%20Mockup/layout-desktop-section-3.jpg" alt="alt text" width="700" />
+<img src="/development/assets/BestShop%20Mockup/layout-desktop-section-4.jpg" alt="alt text" width="700" />
+<img src="/development/assets/BestShop%20Mockup/layout-desktop-section-5.jpg" alt="alt text" width="700" />
+<img src="/development/assets/BestShop%20Mockup/layout-desktop-section-6.jpg" alt="alt text" width="700" />
+<img src="/development/assets/BestShop%20Mockup/layout-desktop-section-7.jpg" alt="alt text" width="700" />
 
 
 
