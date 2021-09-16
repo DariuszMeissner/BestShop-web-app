@@ -10,8 +10,8 @@ module.exports = {
 
   output: {
     filename: "out.js",
-    path: path.resolve(__dirname, `./distribution`),
-    publicPath: './distribution/',
+    path: path.resolve(__dirname, `${entryPath}/build`),
+    publicPath: '/build/',
   },
   devServer: {
     static: path.join(__dirname, `${entryPath}`),
