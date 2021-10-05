@@ -26,12 +26,6 @@ Landing page based on HTML5, CSS3, SASS, RWD, BEM metodology and JavaScript.
 - full customize from variables: colors, fonts size, space, shapes,
 - product calculator
 
-## What next
-- improvement of calculator logic
-- implement of fields validation for contact form
-- implement tooltips
-- implement React 
-
 ## How To Use
 To run this app You need clone this repo and run `npm install` to install all the dependencies. <br/>
 After installed dependencies you can run `npm start` to start application.
