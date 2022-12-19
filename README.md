@@ -2,7 +2,7 @@
 <img src="/development/assets/BestShop%20Mockup/layout-desktop-section-2.jpg" alt="alt text" width="800" />
 
 # BestShop-web-app
-This is web application which i'm making during workshop Coders Lab school.
+This is my fisrt web application which i'm making during workshop Coders Lab school.
 
 ### demo https://dariuszmeissner.github.io/BestShop-web-app/
 
