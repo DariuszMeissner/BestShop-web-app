@@ -9,7 +9,6 @@ This is my fisrt web application which i'm making during workshop Coders Lab sch
 ## Table of contents
 * [Introduction](#introduction)
 * [Features](#features)
-* [What next](#what-next)
 * [How To Use](#how-to-use)
 * [Mockup desktop](#mockup-desktop)
 
